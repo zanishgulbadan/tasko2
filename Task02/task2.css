@@ -1,0 +1,191 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background: #f0f0f0; /* ✅ light grey background */
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  padding: 20px 0;
+}
+
+/* Header flex layout */
+.header-flex {
+  display: flex;
+  align-items: center ;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.header-flex .image {
+  flex: 1;
+  text-align: right;
+}
+
+.header-flex .text {
+  flex: 1;
+  text-align: left;
+}
+
+header .logo {
+  max-width: 400px;
+  text-align: right;
+   
+}
+
+header h1 {
+  font-size: 26px;
+  margin: 10px 0;
+  color: #111;
+  text-align: center;
+  position : relative;
+  Right: 10rcap;
+  letter-spacing: 4px;
+  margin-left:40px;  /* move paragraph to the right */
+  margin-top: 10px;
+}
+
+header p {
+  font-size: 20px;
+  color: #666;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-right: 230px;  /* move paragraph to the right */
+  margin-top: 20px;
+  line-height: 0
+}
+
+header .app-buttons img {
+  height: 80px;
+  margin: 80px;
+  cursor: pointer;
+  margin-left:10px; 
+  position: relative;
+  right: 70px;
+  
+
+}
+
+header .main-screens {
+  max-width: 150%;
+
+}
+
+/* Sections */
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 20px;
+  gap: 40px;
+  word-spacing: 5px;
+  position: relative;
+  right: 90px;
+  
+}
+
+.section .text {
+  flex: 1;
+  text-align: right;
+}
+
+.section .image {
+  flex: 1;
+  text-align: center;
+}
+
+.section .image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: #111;
+  letter-spacing: 15px;
+  
+}
+
+.section p {
+  font-size: 25px;
+  color: #666;
+  line-height: 1.6;
+  max-width: 400px;
+  
+}
+
+/* Alternate layout for reverse sections */
+.section.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Vertical icon (above IN FUTURE text) */
+.vertical-icon {
+  display: block;
+  max-width: 70px;
+  margin: 0 auto 15px auto; /* centered above heading */
+}
+
+/* Footer */
+footer {
+  background:white;
+  padding: 30px 10px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+footer .app-buttons img {
+  height: 60px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+footer p {
+  font-size: 25px;
+  color: #555;
+  margin: 10px 0;
+}
+
+footer a {
+  color: #0073e6;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Footer logo */
+.footer-logo {
+  max-width: 100px;
+  margin-top: 20px;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .header-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+  .header-flex .text {
+    text-align: center;
+  }
+  .section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .section.reverse {
+    flex-direction: column;
+  }
+  .section .text {
+    text-align: center;
+  }
+}
